@@ -6,11 +6,14 @@ import { createRoot } from "react-dom/client";
 
 import { queryClient } from "./api/query.ts";
 import App from "./App.tsx";
+import { UnityInstanceProvider } from "./contexts/UnityInstanceProvider.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
+      <UnityInstanceProvider>
+        <App />
+      </UnityInstanceProvider>
     </QueryClientProvider>
   </StrictMode>,
 );
