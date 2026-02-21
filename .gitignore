@@ -475,3 +475,6 @@ $RECYCLE.BIN/
 
 # tsconfig
 !tsconfig.base.json
+
+# .env
+.env
