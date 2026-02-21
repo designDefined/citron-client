@@ -1,9 +1,11 @@
 const buildUrl = "/unity/Build";
+const storageUrl = import.meta.env.VITE_R2_URL ?? "";
+console.log(storageUrl);
 const config = {
   arguments: [],
-  dataUrl: buildUrl + "/game.data",
+  dataUrl: storageUrl + "/game.data",
   frameworkUrl: buildUrl + "/game.framework.js",
-  codeUrl: buildUrl + "/game.wasm",
+  codeUrl: storageUrl + "/game.wasm",
   streamingAssetsUrl: "StreamingAssets",
   companyName: "DefaultCompany",
   productName: "unity-web-test",
