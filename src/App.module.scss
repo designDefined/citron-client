@@ -1,8 +1,18 @@
+@font-face {
+  font-family: "NostalgicPoliceFairness";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/Griun_PolFairness-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
 :root {
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
+
+  font-family: "NostalgicPoliceFairness", sans-serif;
 }
 
 .App {
